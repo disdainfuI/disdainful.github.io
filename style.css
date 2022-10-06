@@ -1,0 +1,37 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#form_search {
+    text-align: center;
+    padding: 300px;
+}
+#input {
+    padding-left: 50px;
+    border-radius: 25px;
+    width: 550px;
+    height: 45px;
+    font-size: 16px;
+    font-family: Arial;
+    border-width: 1px;
+    border-color:  rgb(224, 224, 224);
+    border-style: solid;
+}
+#input:hover {
+    box-shadow: 0.5px 0.5px 6px 0.1px rgb(190, 190, 190)    
+}
+#search_sign {
+    position: absolute;
+    top: 312px;
+    left: 510px;
+    width: 21px;
+}
+#input:focus {
+    outline: none;
+}
+#logo {
+    position: absolute;
+    width: 270px;
+    top: 165px;
+    left: 630px;
+}

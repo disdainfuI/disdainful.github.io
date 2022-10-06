@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advenced search Google</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            button:hover {
+                background-color: #0085f2;
+            }
+            button {
+                float: right;
+                height: 31px;
+                font-size: 11px;
+                font-weight: bold;
+                background-color: #2c99f3;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                width: 22%;
+                margin-top: 8px;
+            }
+            img {
+                height: 25px;
+                padding: 14px;
+            }
+            #m_title{
+                color: #f12515;
+                padding-top: 20px;
+                padding-left: 35px;
+                font-size: 20px;
+            }
+            .nm_title {
+                padding-left: 40px;
+                padding-top: 30px;
+                color: #333;
+            }
+            .m_part   {
+                padding: 20px;
+                display: grid;
+                grid-column-gap: 15px;
+                grid-row-gap: 10px;
+                grid-template-columns: 170px 600px 400px;
+            }
+            .text_l {
+                color: #222;
+                font-size: 13px;
+                padding-left: 20px;
+                padding-top: 5px;
+            }
+            .input_field {
+                height: 20px;
+                border: 1px solid #d9d9d9;
+            }
+            .input_field:focus {
+                border-color: lightblue;   
+                border: 1px solid lightblue;
+            }
+            .text_r {
+                color:#555;
+                font-size: 11px;
+                padding-top: 6px;
+            }
+            #l_line {
+                margin-top: -10px;
+                padding-left: 20px;
+                display: grid;
+                grid-column-gap: 15px;
+                grid-template-columns: 170px 275px 20px 275px 350px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="google_logo.svg">
+        <div id="m_title">Розширений пошук</div>
+        <hr style="height:0.5px;color:#c8c8c851;background-color:#c8c8c851; margin-left: -100%;width: 250%; border-width: 0; margin-top: 30px;">
+        
+        <form action="https://google.com/search">
+            <div class="nm_title">Знайти сторінки, що<br> містять...</div>
+            <div style="font-size: 13px; font-weight: bold; color: #777; position: absolute; left: 805px; top: 190px;">Як це зробити в полі пошуку</div>
+            <div class="m_part">
+                <div class="text_l">усі ці слова:</div>
+                <input type="text" class="input_field" name="q">
+                <div class="text_r">Введіть важливі слова: <b>триколірний рет-тер’єр</b></div>
+                <div class="text_l">точне слово або фразу:</div>
+                <input type="text" class="input_field" name="as_epq">
+                <div class="text_r">Візьміть точні слова в лапки: <b>"рет-тер’єр"</b></div>
+                <div class="text_l">будь-яке з цих слів:</div>
+                <input type="text" class="input_field" name="as_oq">
+                <div class="text_r">Введіть <b>OR</b> між усіма потрібними словами: <b>мініатюрні OR стандартні</b></div>
+                <div class="text_l">жодне з цих слів:</div>
+                <input type="text" class="input_field" name="as_eq">
+                <div class="text_r" style="padding-top: 2px;">Поставте знак мінус перед небажаними словами:<b><br> -гризун, -"Джек Рассел"</b></div>
+            </div>
+            <div id="l_line">
+                <div class="text_l">числа в діапазоні від:</div>
+                <input type="text" class="input_field" name="as_nlo">
+                <div class="text_l" style="padding-left: 2px">до</div>
+                <input type="text" class="input_field" name="as_nhi">
+                <div class="text_r" style="padding-top: 2px;">Поставте 2 крапки між числами та додайте одиницю виміру:<br><b> 10..35 фунтів, 300..500 дол. США, 2010..2011</b></div>
+            </div>
+            <div class="m_part">
+                <div></div>
+                <div><button>Розширений пошук</button></div>
+            </div>
+            <hr style="width: 1150px;text-align:left;margin-left:40px;height:0.5px;color:#c8c8c851;background-color:#c8c8c851;border-width: 0;margin-top: 100px;">
+
+        </form>
+        <a href="index_google_photo.html" style="color: #505050; text-align: left; position: absolute; top: 22px;left: 1240px; font-size: 14px;text-decoration: none;">Зображення</a>
+        <a href="index.html" style="color: #505050; text-align: left; position: absolute; top: 22px;left: 1340px; font-size: 14px;text-decoration: none; font-family: sans-serif;">Пошук</a>
+    </body>
+</html>
